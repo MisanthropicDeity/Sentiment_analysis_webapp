@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+    <style>
+        .gap-10 {
+           width:100%;
+           height:10px;
+        }
+        .gap-20 {
+           width:100%;
+           height:20px;
+        }
+        .gap-50 {
+           width:100%;
+           height:50px;
+        }
+     </style>
+    <!-- Title Page-->
+    <title>Thank You</title>
+
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- Main CSS-->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home/css/bootstrap.min.css' %}" type = "text/css"/>
+
+    <link href="{% static 'css/main.css' %}" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper bg-dark p-t-100 p-b-50">
+        <div class="wrapper wrapper--w900 text-center">
+            
+                
+                
+                <div class="card-body">
+
+                    <div class="jumbotron jumbotron-fluid text-center">
+                        <div class="container">
+                          <h1> the following news headline : {{headline}} </h1>
+                          <h1> has {{probablity}} of being a sarcastic news </h1>
+                        </div>
+                      </div>
+                      
+                </div>
+                
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'home/js/bootstrap.min.js' %}"></script>
+
+
+    <!-- Main JS-->
+    <script src="{% static 'js/global.js' %}"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->

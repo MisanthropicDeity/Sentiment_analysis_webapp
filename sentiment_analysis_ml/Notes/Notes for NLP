@@ -1,0 +1,33 @@
+Notes for NLP 
+
+Embedding layer:
+	#Turns positive integers (indexes) into dense vectors of fixed size. eg. [[4], [20]] -> [[0.25, 0.1], [0.6, -0.2]]
+    #use some kind of mapping
+    #https://keras.io/layers/embeddings/     for reference
+    #Input shape : 2D tensor with shape: (batch_size, sequence_length).
+    #Output shape : 3D tensor with shape: (batch_size, sequence_length, output_dim).
+
+Pooling:
+	A problem with the output feature maps is that they are sensitive to the location of the features in the input. One approach to address this sensitivity is to down sample the feature maps. This has the effect of making the resulting down sampled feature maps more robust to changes in the position of the feature in the image, referred to by the technical phrase 
+	&&&“local translation invariance.”&&&&
+
+
+	Pooling layers provide an approach to down sampling feature maps by summarizing the presence of features in patches of the feature map. Two common pooling methods are average pooling and max pooling that summarize the average presence of a feature and the most activated presence of a feature respectively.
+
+		refer : https://machinelearningmastery.com/pooling-layers-for-convolutional-neural-networks/
+
+
+
+Loss Function :
+	refer: https://keras.io/losses/
+
+Optimisers :
+	refer : https://keras.io/optimizers/
+
+	adam:
+		Adam [1] is an adaptive learning rate optimization algorithm that’s been designed specifically for training deep neural networks.
+
+
+metrics :
+	refer :
+		https://keras.io/metrics/
